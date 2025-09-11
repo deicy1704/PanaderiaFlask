@@ -1,0 +1,83 @@
+PANADERÍA DELICIAS DEL HOGAR - INSTRUCCIONES DE INSTALACIÓN
+================================================================
+
+🍞 PROYECTO COMPLETO DE PANADERÍA EN FLASK 🍞
+
+CARACTERÍSTICAS:
+- Sistema completo de e-commerce para panadería
+- Autenticación de usuarios (registro/login)
+- Catálogo de productos con imágenes reales
+- Sistema de carrito de compras
+- Panel de administrador
+- Gestión de pedidos
+- Todo en español
+- Diseño responsivo con Bootstrap
+
+REQUISITOS DEL SISTEMA:
+- Python 3.8 o superior
+- pip (gestor de paquetes de Python)
+
+INSTALACIÓN PASO A PASO:
+
+1. EXTRAER EL PROYECTO:
+   - Descomprime el archivo panaderia-delicias-del-hogar.zip
+   - Abre una terminal en la carpeta del proyecto
+
+2. INSTALAR DEPENDENCIAS:
+   pip install flask flask-login flask-sqlalchemy flask-migrate flask-wtf email-validator werkzeug wtforms gunicorn psycopg2-binary
+
+3. CONFIGURAR VARIABLES DE ENTORNO:
+   - Crea un archivo .env en la carpeta raíz con:
+   
+   SESSION_SECRET=tu_clave_secreta_aqui
+   DATABASE_URL=sqlite:///panaderia.db
+
+4. INICIALIZAR LA BASE DE DATOS:
+   python -c "from app import app, db; app.app_context().push(); db.create_all()"
+
+5. EJECUTAR LA APLICACIÓN:
+   python main.py
+   
+   O con gunicorn (para producción):
+   gunicorn --bind 0.0.0.0:5000 main:app
+
+6. ABRIR EN NAVEGADOR:
+   http://localhost:5000
+
+USUARIO ADMINISTRADOR POR DEFECTO:
+- Email: admin@bakery.com
+- Contraseña: admin123
+
+ESTRUCTURA DEL PROYECTO:
+├── app.py              # Configuración principal de Flask
+├── main.py             # Punto de entrada de la aplicación
+├── models.py           # Modelos de base de datos
+├── forms.py            # Formularios WTF
+├── auth/               # Módulo de autenticación
+├── admin/              # Panel de administrador
+├── cart/               # Sistema de carrito
+├── products/           # Catálogo de productos
+├── templates/          # Plantillas HTML
+└── static/             # Archivos CSS y JavaScript
+
+FUNCIONALIDADES:
+✅ Registro y login de usuarios
+✅ Catálogo de productos con búsqueda y filtros
+✅ Carrito de compras dinámico
+✅ Sistema de pedidos
+✅ Panel de administrador completo
+✅ Gestión de productos y categorías
+✅ Diseño responsivo y moderno
+✅ Imágenes reales de productos de panadería
+
+TECNOLOGÍAS UTILIZADAS:
+- Backend: Flask (Python)
+- Base de datos: SQLAlchemy
+- Frontend: Bootstrap 5 + JavaScript
+- Autenticación: Flask-Login
+- Formularios: WTForms
+- Validación: Email-Validator
+
+¡Tu panadería virtual está lista para funcionar! 🥖🧁
+
+Para soporte o modificaciones, contacta al desarrollador.
