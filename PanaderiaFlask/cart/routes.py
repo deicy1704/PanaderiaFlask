@@ -4,7 +4,7 @@ from flask import (
 )
 from flask_login import login_required, current_user
 from cart import bp
-from app import db
+from app1 import db
 from models import Product, CartItem, Order, OrderItem, Invoice
 from forms import CartItemForm
 import os

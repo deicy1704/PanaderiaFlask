@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
 from flask_login import login_required, current_user
 from admin import bp
-from app import db
+from app1 import db
 from models import Product, Category, Order, User
 from forms import ProductForm, CategoryForm
 from functools import wraps

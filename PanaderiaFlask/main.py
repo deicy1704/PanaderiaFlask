@@ -1,4 +1,4 @@
-from app import app
+from app1 import app
 from flask_migrate import Migrate
 
 # Configurar Flask-Migrate
