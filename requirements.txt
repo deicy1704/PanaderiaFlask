@@ -2,3 +2,4 @@ Flask
 Flask-Login
 Flask-SQLAlchemy
 bakery 
+Flask-Migrate==4.0.5
