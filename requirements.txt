@@ -3,3 +3,4 @@ Flask-Login
 Flask-SQLAlchemy
 bakery 
 Flask-Migrate==4.0.5
+fpdf==1.7.2
